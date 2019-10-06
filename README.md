@@ -1,7 +1,7 @@
 # SDA_Team2Project
-Sda Team Project - echipa 2 (Flavia, Adelina, Alexandru, Robert, Claudiu)
+    Sda Team Project - echipa 2 (Flavia, Adelina, Alexandru, Robert, Claudiu)
 
-Model
+    Model
         Student
         Grupa
         Mesaj
@@ -10,7 +10,7 @@ Model
         Locatie
         Materie
         
- Student
+    Student
     Nume - text, obligatoriu
     Prenume - text, obligatoriu
     Email - text, obligatoriu, validare format si unicitate
@@ -18,13 +18,13 @@ Model
     Telefon - text, validare format
     Grupa - numeric, intre 1 si 10. Reprezinta grupa din care face parte studentul
 
-Grupa
+    Grupa
     IdGrupa - numeric,obligatoriu intre 1 si 10.
     An - obligatoriu intre 1 si 6. Reprezinta anul din care face parte grupa.
     Studenti - lista de studenti
     Mesaje- lista de mesaje asociate grupei
     
- Profesor
+    Profesor
     Nume - text, obligatoriu
     Prenume - text, obligatoriu
     Email - text, obligatoriu, validare format
@@ -34,13 +34,13 @@ Grupa
     Activ - boolean, obligatoriu, Indica daca profesorul este activ si poate fi alocat pentru cursuri
     Materii - lista de materii predate
     
- Materie
+    Materie
     Denumire - text, obligatoriu
     Prescurtare - text, obligatoriu. Denumirea scurta a materiei
     Detalii - text, obligatoriu, maxim 100 caractere. Detalii despre continutul cursului / seminarului
     Profesori - lista de profesori care pot preda materia curenta
     
-  Orar
+    Orar
     Grupa -  obligatoriu
     Profesor - obligatoriu
     Locatie - obligatoriu
@@ -50,7 +50,7 @@ Grupa
     Detalii - text, obligatoriu, Detalii optionale despre curs
     Materie - obligatoriu  
     
- Mesaj
+    Mesaj
     Student - obligatoriu, Studentul care a transmis mesajul
     Timp - data si timpul, obligatoriu. Timpul exact la care a fost transmis cu precizie cat mai mare (e.g. milisecunde). Precizia este necesara pentru ordonare cronologica.
     Text - text, obligatoriu. textul mesajului
