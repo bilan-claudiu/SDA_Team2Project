@@ -69,12 +69,16 @@ public class Student {
 
     //verifica nr.telefon doar cifre
     public boolean checkPhone(String phonenumber) {
-        String regex = "(0/91)?[7-9][0-9]{9}";
+        String regex = "^(\\+4|)?(07[0-8]{1}[0-9]{1}|02[0-9]{2}|03[0-9]{2}){1}?(\\s|\\.|\\-)?([0-9]{3}(\\s|\\.|\\-|)){2}$";
         boolean flag = (phonenumber.matches(regex));
-        return true;
+        if (flag) {
+            return true;
+        }
+        return false;
     }
 
-    //erifica nr.telefon contine @
+
+    //Verifica nr.telefon contine @
     public boolean containEmailSign(String email) {
         String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
         return email.matches(regex);
@@ -83,6 +87,56 @@ public class Student {
     @Override
     public String toString() {
         return nume + " " + prenume;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GET/SET>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+    public String getNume() {
+        return nume;
+    }
+
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public void setPrenume(String prenume) {
+        this.prenume = prenume;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getDataNastere() {
+        return dataNastere;
+    }
+
+    public void setDataNastere(String dataNastere) {
+        this.dataNastere = dataNastere;
+    }
+
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public void setTelefon(String telefon) {
+        this.telefon = telefon;
+    }
+
+    public int getGrupa() {
+        return grupa;
+    }
+
+    public void setGrupa(int grupa) {
+        this.grupa = grupa;
     }
 }
 
