@@ -77,10 +77,12 @@ class Profesor {
 
     //verifica daca nr.tel contine doar cifre
     private boolean checkphone(String phonenumber) {
-        String phoneNumber = "9999999998";
-        String regex = "(0/91)?[7-9][0-9]{9}";
-        boolean flag = (phoneNumber.matches(regex));
-        return flag == true;
+        String regex = "^(\\+4|)?(07[0-8]{1}[0-9]{1}|02[0-9]{2}|03[0-9]{2}){1}?(\\s|\\.|\\-)?([0-9]{3}(\\s|\\.|\\-|)){2}$";
+        boolean flag = (phonenumber.matches(regex));
+        if (flag) {
+            return true;
+        }
+        return false;
     }
 
     //verifica lungime nr.tel = 10;
@@ -117,6 +119,80 @@ class Profesor {
                 nume + " " +
                 prenume +
                 ']';
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GET/SET >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+    public String getNume() {
+        return nume;
+    }
+
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public void setPrenume(String prenume) {
+        this.prenume = prenume;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public void setTelefon(String telefon) {
+        this.telefon = telefon;
+    }
+
+    public List<String> getGradList() {
+        return gradList;
+    }
+
+    public void setGradList(List<String> gradList) {
+        this.gradList = gradList;
+    }
+
+    public int getAnAngajare() {
+        return anAngajare;
+    }
+
+    public void setAnAngajare(int anAngajare) {
+        this.anAngajare = anAngajare;
+    }
+
+    public boolean isActiv() {
+        return activ;
+    }
+
+    public void setActiv(boolean activ) {
+        this.activ = activ;
+    }
+
+    public List<Materie> getListMaterii() {
+        return listMaterii;
+    }
+
+    public void setListMaterii(List<Materie> listMaterii) {
+        this.listMaterii = listMaterii;
+    }
+
+    public String getGrad() {
+        return grad;
+    }
+
+    public void setGrad(String grad) {
+        this.grad = grad;
     }
 }
 
