@@ -20,7 +20,7 @@ public class Orar {
 
     /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONSTRUCTOR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-    public Orar(Grupa grupa, Profesor profesor, Locatie locatie, String ora_inceput, String ora_Inceput, String ora_Sfarsit, String detalii, Materie materie) {
+    public Orar(Grupa grupa, Profesor profesor, Locatie locatie, String time, String ora_Inceput, String ora_Sfarsit, String detalii, Materie materie) {
         this.grupa = grupa;
         this.profesor = profesor;
         this.locatie = locatie;
@@ -29,6 +29,7 @@ public class Orar {
         this.detalii = detalii;
         this.materie = materie;
     }
+
 
     /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> METODE  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 

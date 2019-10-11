@@ -99,5 +99,6 @@ public class Main {
         //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Orar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         Orar orar = new Orar(grupa, profesor1, locatie, "15.10.2019", "08:00", "14:00", "Chimie organica", materie1);
+
     }
 }
