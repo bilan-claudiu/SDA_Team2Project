@@ -60,4 +60,36 @@ public class Materie {
                 + denumire +
                 ']';
     }
+
+    public String getDenumire() {
+        return denumire;
+    }
+
+    public void setDenumire(String denumire) {
+        this.denumire = denumire;
+    }
+
+    public String getPrescurtare() {
+        return prescurtare;
+    }
+
+    public void setPrescurtare(String prescurtare) {
+        this.prescurtare = prescurtare;
+    }
+
+    public String getDetalii() {
+        return detalii;
+    }
+
+    public void setDetalii(String detalii) {
+        this.detalii = detalii;
+    }
+
+    public List<Profesor> getProfesori() {
+        return profesori;
+    }
+
+    public void setProfesori(List<Profesor> profesori) {
+        this.profesori = profesori;
+    }
 }

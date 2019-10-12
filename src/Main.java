@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -99,6 +100,15 @@ public class Main {
         //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Orar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         Orar orar = new Orar(grupa, profesor1, locatie, "15.10.2019", "08:00", "14:00", "Chimie organica", materie1);
+
+       // Task1
+        Task1 tsk1 = new Task1();
+        System.out.println(tsk1.TotalStudenti(studentList));
+
+        // Task9
+        Task9 tsk9 = new Task9();
+        tsk9.MateriiAlfb(listMaterii);
+
 
     }
 }
